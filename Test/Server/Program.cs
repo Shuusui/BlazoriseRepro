@@ -66,9 +66,9 @@ else
     app.UseExceptionHandler("/Error");
 }
 
-app.UseSecurityHeaders(
-    SecurityHeadersDefinitions.GetHeaderPolicyCollection(env.IsDevelopment(),
-        configuration["OpenIDConnectSettings:Authority"]!));
+//app.UseSecurityHeaders(
+//    SecurityHeadersDefinitions.GetHeaderPolicyCollection(env.IsDevelopment(),
+//        configuration["OpenIDConnectSettings:Authority"]!));
 
 app.UseHttpsRedirection();
 app.UseBlazorFrameworkFiles();
